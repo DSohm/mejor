@@ -5,13 +5,13 @@
 .contenedor{
     background: rgb(194, 192, 194);
     width: 100vw;
-    height:450vh;
+    height:350vh;
     text-align: center;
 }
 
 p{
     font-size: xx-large;
-    padding: 5%;
+    padding: 1%;
 }
 
 button{
