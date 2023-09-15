@@ -8,7 +8,7 @@
 /* Estilo para el contenedor principal */
 .contenedor {
     background: rgb(194, 192, 194);
-    width: 100%;
+    width: auto;
     height: auto;
     text-align: center;
     padding: 2%; /* Añade un espacio alrededor del contenedor para que no esté pegado a los bordes */
