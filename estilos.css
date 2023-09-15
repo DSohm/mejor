@@ -9,7 +9,7 @@
 .contenedor {
     background: rgb(194, 192, 194);
     width: auto;
-    height: auto;
+    height: 225vh;
     text-align: center;
     padding: 2%; /* Añade un espacio alrededor del contenedor para que no esté pegado a los bordes */
 }
