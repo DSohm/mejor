@@ -1,28 +1,39 @@
-*{
+/* Reset de márgenes y paddings */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.contenedor{
+/* Estilo para el contenedor principal */
+.contenedor {
     background: rgb(194, 192, 194);
-    width:100vw;
-    height:225vh;
+    width: 100%;
+    height: auto;
     text-align: center;
+    padding: 2%; /* Añade un espacio alrededor del contenedor para que no esté pegado a los bordes */
 }
 
-p{
-    font-size: xx-large;
-    padding: 1%;
+/* Estilo para el párrafo */
+p {
+    font-size: 2rem; /* Utiliza unidades relativas para el tamaño de fuente */
+    padding: 1%; /* Utiliza porcentajes para el espaciado */
 }
 
-button{
-    font-size: xx-large;
-    padding: 0.75em;
+/* Estilo para el botón */
+button {
+    font-size: 2rem;
+    padding: 1.5em;
 }
 
-#yesBtn{
-    transform: translate(-100%,0);
+/* Estilo para el botón 'yesBtn' */
+#yesBtn {
+    transform: translateX(-100%); /* Cambiado de '-100%' a 'translateX' para ajustar el posicionamiento */
 }
 
-#noBtn{
+/* Estilo para el botón 'noBtn' */
+#noBtn {
     position: absolute;
+    top: 0;
+    right: 0;
 }
