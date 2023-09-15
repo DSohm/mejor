@@ -1,38 +1,33 @@
-/* Reset de márgenes y paddings */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Asegura que el ancho y alto incluyan paddings y bordes */
 }
 
-/* Estilo para el contenedor principal */
 .contenedor {
     background: rgb(194, 192, 194);
-    max-width: 100%; /* Cambiamos width a max-width para que se ajuste automáticamente */
-    margin: 0 auto; /* Centramos el contenedor horizontalmente */
-    padding: 2%; /* Añade un espacio alrededor del contenedor para que no esté pegado a los bordes */
+    width: 100%; /* Ancho automático para adaptarse al contenedor padre */
+    height: auto; /* Alto automático para adaptarse al contenido */
+    min-height: 100vh; /* Mantén una altura mínima para ocupar al menos toda la altura de la ventana gráfica */
+    text-align: center;
 }
 
-/* Estilo para el párrafo */
 p {
-    font-size: 2rem; /* Utiliza unidades relativas para el tamaño de fuente */
-    padding: 1%; /* Utiliza porcentajes para el espaciado */
+    font-size: 2rem; /* Usando 'rem' para un tamaño de fuente relativo */
+    padding: 1%; /* Porcentaje del ancho del contenedor */
 }
 
-/* Estilo para el botón */
 button {
     font-size: 2rem;
-    padding: 1.5em;
+    padding: 0.75em;
 }
 
-/* Estilo para el botón 'yesBtn' */
 #yesBtn {
-    transform: translateX(-100%); /* Cambiado de '-100%' a 'translateX' para ajustar el posicionamiento */
+    transform: translateX(-100%); /* Cambiado a translateX para evitar problemas en pantallas pequeñas */
 }
 
-/* Estilo para el botón 'noBtn' */
 #noBtn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0; /* Ajusta la posición superior según sea necesario */
+    right: 0; /* Ajusta la posición derecha según sea necesario */
 }
